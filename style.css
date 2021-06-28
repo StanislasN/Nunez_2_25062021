@@ -37,14 +37,25 @@ body {
 
 .navbar__link {
     margin-right: 5em;
-    background: crimson;
+    
 }
 
+.navbar li a {
+    padding: 30px;
+}
+
+.navbar li a:hover {
+    border-top: #0065FC 2px solid;
+    color: #0065FC;
+    
+}
+
+/*
 .navbar__link:hover {
     border-top: #0065FC 2px solid;
     color: #0065FC;
 }
-
+*/
 .navbar li {
     color: #0065FC;
 }
@@ -268,7 +279,11 @@ a h3 {
     box-shadow: 5px 5px 5px #dddddd;
 }
 
-#popular__figcaption {
+.popular__figure {
+    display: flex;
+}
+
+.popular__figcaption {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
