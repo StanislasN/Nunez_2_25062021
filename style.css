@@ -27,7 +27,6 @@ body {
 
     #body-marge {
         width: 100%;
-        margin: auto;
         font-size: small;
     }
 }
@@ -74,14 +73,14 @@ body {
 }
 
 @media all and (max-width: 768px ) {
-    .logocontainer {
-        margin-left: 5px;
+    .logo__container {
+        margin-left: 15px;
     }
 
     .sign_up {
         position: absolute;
         top: 17px;
-        right: 20px;
+        right: 15px;
     }
 
     .navbar {
@@ -193,6 +192,10 @@ form button {
     border-radius: 25px 25px 25px 25px;
 }
 
+.filters__button:hover {
+    background: #6fa7fa;
+}
+
 .filters__button--icon {
     display: flex;
     align-items: center;
@@ -200,7 +203,7 @@ form button {
     width: 50px;
     height: 50px;
     color: #0065FC;
-    background-color: #F2F2F2;
+    background-color: #deebff;
     border-radius: 50px;
     font-size: 20px;
 }
@@ -291,7 +294,7 @@ form button {
         
         width: 100%;
         background-color: transparent;
-        margin: 0;
+        margin: 15px 0 0 0;
         padding: 0;
     }
 }
@@ -347,10 +350,12 @@ a h3 {
 @media all and (max-width:768px) {
     #cards__container {
         flex-direction: column;
+
     }
     
     .card__container {
         width: 100%;
+        padding: 0;
     }
 }
 /*LES PLUS POPULAIRES*/
@@ -437,7 +442,7 @@ a h3 {
     object-fit: cover;
 }
 
-.figure {
+.activity__figure {
     display: flex;
     width: 100%;
     flex-direction: column-reverse;
@@ -486,6 +491,10 @@ a h3 {
 }
 
 @media all and (max-width:768px) {
+    #activity__container {
+        padding-bottom: 15px;
+    }
+
     #activity-cards__container {
         display: block;
         height: auto;
@@ -496,9 +505,9 @@ a h3 {
     .block-picture {
         width: 100%!important;
     }
-    .figure {
+    .activity__figure {
         display: flex;
-        height: 320px!important;
+        height: 250px!important;
         margin: 0 0 40px 0!important;
     }
 }
