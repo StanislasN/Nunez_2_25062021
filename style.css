@@ -12,8 +12,7 @@ a {
 
 body {
     font-family: 'raleway', sans-serif;
-    margin: auto;
-      
+    margin: auto;  
 }
 
 #body-marge {
@@ -22,6 +21,10 @@ body {
 }
 
 @media all and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    } 
+
     #body-marge {
         width: 100%;
         margin: auto;
@@ -48,11 +51,6 @@ body {
     padding: 2em;  
 }
 
-.navbar__link {
-    margin-right: 5em;
-    
-}
-
 .navbar li a {
     padding: 30px;
 }
@@ -77,21 +75,41 @@ body {
 }
 
 @media all and (max-width: 768px ) {
-    .logo__container {
+    .logocontainer {
         margin-left: 5px;
     }
-    
+
     .sign_up {
         position: absolute;
         top: 17px;
         right: 20px;
     }
-    
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar ul {
+        width: 100%;
+        padding: 2em 0 1em 0;
+    }
+
+    .navbar li {
+        width: 50%; 
+    }
+
+    .navbar li a {
+        padding: 0 0 15px 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
     .navbar li a:hover {
         width: 100%;
         border-top: transparent;
         border-bottom: #0065FC 2px solid;
-        color: #0065FC;  
+        color: #0065FC;
     }
 
     
