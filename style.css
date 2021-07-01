@@ -312,6 +312,8 @@ form button {
     margin: 20px 20px 20px 0;
     padding: 5px;
     box-shadow: 5px 5px 5px #dddddd;
+    transition-property: transform;
+    transition-duration: 400ms;
 }
 
 .card__container:hover {
@@ -377,6 +379,8 @@ a h3 {
     margin: 20px 0 20px 0;
     height: 180px;
     box-shadow: 5px 5px 5px #dddddd;
+    transition-property: transform;
+    transition-duration: 400ms;
 }
 
 .card-popular__container:hover {
@@ -457,6 +461,12 @@ a h3 {
     box-shadow: 5px 5px 5px #dddddd;
     background-size: cover;
     background-position: center;
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+
+.activity__figure:hover {
+    transform: scale(1.05);
 }
 
 .activity__figcaption {
@@ -466,10 +476,6 @@ a h3 {
     display: flex;
     align-items: center;
     padding-left: 30px;
-}
-
-.activity__figure:hover {
-    transform: scale(1.05);
 }
 
 .figure1 {
