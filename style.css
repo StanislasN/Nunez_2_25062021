@@ -101,6 +101,7 @@ body {
         width: 100%;
         display: block;
         text-align: center;
+        border-bottom: #F2F2F2 2px solid;
     }
 
     .navbar li a:hover {
@@ -188,12 +189,14 @@ form button {
     margin-left: 15px;
     padding-right: 15px;
     align-items: center;
-    border: 2px #F2F2F2 solid;
+    border: 2px #F2F2F2  solid;
     border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
 }
 
 .filters__button:hover {
-    background: #6fa7fa;
+    background: #0065FC;
+    color: white;
 }
 
 .filters__button--icon {
@@ -246,7 +249,6 @@ form button {
     border-radius: 50%;
     width: 25px;
     height: 25px;
-
 }
 
 /*SECTION DES HEBERGEMENTS (containers)*/
@@ -283,7 +285,6 @@ form button {
     }
 
     #hosting__container--right {
-        
         width: 100%;
         border-radius: 0;
         margin: 0;
@@ -291,7 +292,6 @@ form button {
     }
 
     #hosting__container--left {
-        
         width: 100%;
         background-color: transparent;
         margin: 15px 0 0 0;
@@ -312,6 +312,10 @@ form button {
     margin: 20px 20px 20px 0;
     padding: 5px;
     box-shadow: 5px 5px 5px #dddddd;
+}
+
+.card__container:hover {
+    transform: scale(1.05);
 }
 
 .hosting__picture {
@@ -350,7 +354,6 @@ a h3 {
 @media all and (max-width:768px) {
     #cards__container {
         flex-direction: column;
-
     }
     
     .card__container {
@@ -374,6 +377,10 @@ a h3 {
     margin: 20px 0 20px 0;
     height: 180px;
     box-shadow: 5px 5px 5px #dddddd;
+}
+
+.card-popular__container:hover {
+    transform: scale(1.05);
 }
 
 .popular__figure {
@@ -456,6 +463,13 @@ a h3 {
     background-color: white;
     height: 60px;
     border-radius: 0 0 25px 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.activity__figure:hover {
+    transform: scale(1.05);
 }
 
 .figure1 {
@@ -544,7 +558,6 @@ a h3 {
 
     .footer__item {
         padding: 10px;
-    }
-
-    
+    }   
 }
+
