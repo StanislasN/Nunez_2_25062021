@@ -216,7 +216,7 @@ form button {
     display: flex;
     height: 48px;
     margin-left: 15px;
-    padding-right: 15px;
+    padding-right: 45px;
     align-items: center;
     border: 2px #F2F2F2  solid;
     border-radius: 25px 25px 25px 25px;
@@ -238,13 +238,14 @@ form button {
     background-color: #deebff;
     border-radius: 50px;
     font-size: 20px;
+    margin: -2px;
 }
 
 .filters__button--text {
     display: flex;
     align-items: center;
     font-weight: bold;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 @media all and (max-width:1024px) {
@@ -321,14 +322,14 @@ form button {
         width: 100%;
         border-radius: 0;
         margin: 0;
-        padding: 0;
+        padding: 20px 0 20px 0;
     }
 
     #hosting__container--left {
         width: 100%;
         background-color: transparent;
         margin: 15px 0 0 0;
-        padding: 0;
+        padding: 20px 0 20px 0;
     }
 }
 
@@ -394,6 +395,10 @@ a h3 {
     .card__container {
         width: 100%;
         padding: 0;
+    }
+
+    .view_more {
+        margin-top: 15px;
     }
 }
 
@@ -545,7 +550,8 @@ a h3 {
 
 @media all and (max-width:1024px) {
     #activity__container {
-        padding-bottom: 15px;
+        padding: 0 0 15px 0;
+        margin-top: 15px;
     }
 
     #activity-cards__container {
