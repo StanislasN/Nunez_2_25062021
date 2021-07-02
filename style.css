@@ -20,17 +20,6 @@ body {
     margin: auto;
 }
 
-@media all and (max-width:1024px) {
-    body {
-        overflow-x: hidden;
-    } 
-
-    #body-marge {
-        width: 100%;
-        font-size: small;
-    }
-}
-
 /* HEADER */
 
 .header {
@@ -72,45 +61,6 @@ body {
     border-bottom: #0065FC 2px solid;
 }
 
-@media all and (max-width: 1024px ) {
-    .logo__container {
-        margin-left: 15px;
-    }
-
-    .sign_up {
-        position: absolute;
-        top: 17px;
-        right: 15px;
-    }
-
-    .navbar {
-        width: 100%;
-    }
-
-    .navbar ul {
-        width: 100%;
-        padding: 2em 0 1em 0;
-    }
-
-    .navbar li {
-        width: 50%; 
-    }
-
-    .navbar li a {
-        padding: 0 0 15px 0;
-        width: 100%;
-        display: block;
-        text-align: center;
-        border-bottom: #F2F2F2 2px solid;
-    }
-
-    .navbar li a:hover {
-        width: 100%;
-        border-top: transparent;
-        border-bottom: #0065FC 2px solid;
-        color: #0065FC;
-    }
-}
 
 /*TITRE*/
 
@@ -122,11 +72,6 @@ h1 {
     padding-bottom: 0.2em;
 }
 
-@media all and (max-width: 1024px) {
-    .margin15 {
-        margin: 0 15px 0 15px;
-    }
-}
 
 /*BARRE DE RECHERCHE*/
 
@@ -171,31 +116,6 @@ form button {
 .button-loupe {
     display: none;
 }
-
-
-@media all and (max-width: 1024px ) {
-    
-    #form {
-        justify-content: center;
-    }
-
-    .button-search {
-        display: none;   
-    }
-
-    .button-loupe {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-    }
-
-    form p{
-        width: 100%;
-    }
-
-}
-
 
 /*FILTRES*/
 
@@ -248,22 +168,6 @@ form button {
     padding-left: 20px;
 }
 
-@media all and (max-width:1024px) {
-    
-    #filters__container {
-        margin-top: 15px;
-    }
-
-    #filters__title {
-        width: 100%;
-        margin-bottom: 6px;
-    }
-
-    .filters__button {
-        margin: 6px 6px 6px 0;
-    } 
-}
-
 /*i Plus de 500 logements sont disponibles dans cette ville*/
 
 #info {
@@ -308,29 +212,6 @@ form button {
     background: #F2F2F2;
     border-radius: 25px;
     padding: 2em 2em 2em 2em;
-}
-
-@media all and (max-width:1024px) {
-    
-    #hosting__section {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 30px;
-    }
-
-    #hosting__container--right {
-        width: 100%;
-        border-radius: 0;
-        margin: 0;
-        padding: 20px 0 20px 0;
-    }
-
-    #hosting__container--left {
-        width: 100%;
-        background-color: transparent;
-        margin: 15px 0 0 0;
-        padding: 20px 0 20px 0;
-    }
 }
 
 /*TITRE ET CARDS DE LA SECTION HEBERGEMENTS A MARSEILLE*/
@@ -387,21 +268,6 @@ a h3 {
     font-weight: 900;
 }
 
-@media all and (max-width:1024px) {
-    #cards__container {
-        flex-direction: column;
-    }
-    
-    .card__container {
-        width: 100%;
-        padding: 0;
-    }
-
-    .view_more {
-        margin-top: 15px;
-    }
-}
-
 /*LES PLUS POPULAIRES*/
 
 #right__title {
@@ -446,16 +312,6 @@ a h3 {
 .card-popular__text {
     display: flex;
     flex-direction: column; 
-}
-
-@media all and (max-width:1024px) {
-    #right__title {
-        margin: 15px;
-    }
-    
-    .card-popular__container {
-        margin: 15px;
-    }
 }
 
 /*ACTIVITES A MARSEILLE*/
@@ -548,7 +404,173 @@ a h3 {
     height: 47%;
 }
 
-@media all and (max-width:1024px) {
+/*FOOTER*/
+
+#footer__container {
+    display: flex;
+    max-width: none;
+    background: #F2F2F2;
+    padding: 50px 0 50px 5%;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    flex: 20%;
+}
+
+.footer__item h3 {
+    margin-bottom: 20px;
+}
+
+.footer__item a {
+    margin-bottom: 10px;
+}
+
+@media all and (max-width:768px) {
+    
+/* BODY */
+
+    body {
+        overflow-x: hidden;
+    } 
+
+    #body-marge {
+        width: 100%;
+        font-size: small;
+    }
+
+/* HEADER */
+
+    .logo__container {
+        margin-left: 15px;
+    }
+
+    .sign_up {
+        position: absolute;
+        top: 17px;
+        right: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar ul {
+        width: 100%;
+        padding: 2em 0 1em 0;
+    }
+
+    .navbar li {
+        width: 50%; 
+    }
+
+    .navbar li a {
+        padding: 0 0 15px 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-bottom: #F2F2F2 2px solid;
+    }
+
+    .navbar li a:hover {
+        width: 100%;
+        border-top: transparent;
+        border-bottom: #0065FC 2px solid;
+        color: #0065FC;
+    }
+
+/* TITRE */
+
+    .margin15 {
+        margin: 0 15px 0 15px;
+    }
+
+/*BARRE DE RECHERCHE*/
+
+    #form {
+        justify-content: center;
+    }
+
+    .button-search {
+        display: none;   
+    }
+
+    .button-loupe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+    }
+
+    form p{
+        width: 100%;
+    }
+
+/* FILTRES */
+
+    #filters__container {
+        margin-top: 15px;
+    }
+
+    #filters__title {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .filters__button {
+        margin: 6px 6px 6px 0;
+    } 
+
+/*SECTION DES HEBERGEMENTS (containers)*/
+
+    #hosting__section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    #hosting__container--right {
+        width: 100%;
+        border-radius: 0;
+        margin: 0;
+        padding: 20px 0 20px 0;
+    }
+
+    #hosting__container--left {
+        width: 100%;
+        background-color: transparent;
+        margin: 15px 0 0 0;
+        padding: 20px 0 20px 0;
+    }
+
+/*TITRE ET CARDS DE LA SECTION HEBERGEMENTS A MARSEILLE*/
+
+    #cards__container {
+        flex-direction: column;
+    }
+
+    .card__container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .view_more {
+        margin-top: 15px;
+    }
+
+/*LES PLUS POPULAIRES*/
+
+    #right__title {
+        margin: 15px;
+    }
+
+    .card-popular__container {
+        margin: 15px;
+    }
+
+/* ACTIVITES A MARSEILLE */
+
     #activity__container {
         padding: 0 0 15px 0;
         margin-top: 15px;
@@ -569,33 +591,9 @@ a h3 {
         height: 250px!important;
         margin: 0 0 40px 0!important;
     }
-}
 
-/*FOOTER*/
+/* FOOTER */
 
-#footer__container {
-    display: flex;
-    max-width: none;
-    background: #F2F2F2;
-    padding: 50px 0 50px 5%;
-}
-
-.footer__item {
-    display: flex;
-    flex-direction: column;
-    flex: 20%;
-    
-}
-
-.footer__item h3 {
-    margin-bottom: 20px;
-}
-
-.footer__item a {
-    margin-bottom: 10px;
-}
-
-@media all and (max-width:1024px) {
     #footer__container {
         display: flex;
         flex-direction: column;
@@ -606,3 +604,24 @@ a h3 {
     }   
 }
 
+@media all and (max-width:280px) {
+    .popular__figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular__picture {
+        border-radius: 25px 25px 0 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .popular__figcaption {
+        justify-content: flex-start;
+        padding: 15px;
+    }
+
+    .card-popular__text {
+        font-size: x-small ;
+    }
+}
