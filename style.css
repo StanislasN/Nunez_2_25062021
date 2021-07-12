@@ -276,6 +276,16 @@ a h3 {
     align-items: center;
 }
 
+.fa-chart-line {
+    font-size: 25px;
+    transition-property: transform;
+    transition-duration: 400ms;
+}
+
+.fa-chart-line:hover {
+    transform: scale(1.25);
+}
+
 .card-popular__container {
     display: flex;
     background: white;
@@ -603,6 +613,7 @@ a h3 {
         padding: 10px;
     }   
 }
+
 
 @media all and (max-width:280px) {
     .popular__figure {
