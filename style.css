@@ -73,6 +73,7 @@ h1 {
 #form {
     display: flex;
     font-size: 1rem;  
+    align-items: center;
 }
 
 #localize__container {
@@ -106,6 +107,7 @@ form button {
     color: white;
     cursor: pointer;
     font-size: large;
+    height: 47px;
 }
 
 .button-loupe {
