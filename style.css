@@ -58,7 +58,7 @@ body {
 
 
 /*TITRE*/
-
+/*
 #section1 {
 padding: 1em 0 1em 0;
 }
@@ -66,7 +66,7 @@ padding: 1em 0 1em 0;
 h1 {
     padding-bottom: 0.2em;
 }
-
+*/
 
 /*BARRE DE RECHERCHE*/
 
@@ -118,7 +118,7 @@ form button {
 
 #filters__container {
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
     align-items: center;
     flex-wrap: wrap; 
 }
